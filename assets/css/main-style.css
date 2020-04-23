@@ -1,0 +1,235 @@
+body{
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+.navbar{
+    background: #ffffff;
+}
+.ubongo{
+    color: #ff4e00;
+}
+.custom-toggler{
+    top: 5px;
+    right: 0px;	
+}
+.navbar a{
+    color: #000000;
+}
+.header-bunner{
+    background-image: url(../images/header-image/header-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-bunner .caption{
+    padding: 20rem 0 20rem 0;
+    text-decoration: none;
+    margin: 2px;
+    color: #ffffff;
+} 
+.header-bunner .caption .header-b{
+    background: #ff4e00;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+    margin: 0;
+    display: inline-block;
+    transition: background 1s ease-in;
+}
+.header-bunner .caption .header-b:hover{
+    background: #000000;
+}
+.services{
+    background: rgb(240, 240, 240);
+    text-align: center;
+    padding: 4rem 0 4rem 0;
+}
+.services .s-block, .projects .p-block, .testimonials .t-block{
+    background: rgb(255, 255, 255);
+    margin: 2px;
+    padding: 10px;
+    width: 280px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: inline-block;
+}
+.services i, .projects i{
+    color: rgb(255, 78, 0);
+    margin: 0;
+    padding: 10px;
+}
+.projects{
+    text-align: center;
+    padding: 4rem 0 4rem 0;
+}
+.testimonials{
+    background: rgb(240, 240, 240);
+    text-align: center;
+    padding: 4rem 0 4rem 0;
+}
+.testimonials .image-test .t-image{
+    width: 120px;
+    height: 120px;
+    margin: 2px auto;
+    border: 1px solid rgb(255, 78, 0);
+    border-radius: 50%;
+}
+.slick-prev:before, .slick-next:before{
+	color: red;
+}
+.contact{
+    text-align: center;
+    padding: 4rem 0 4rem 0;
+}
+.contact #map {
+    margin: 0;
+    padding: 20px 0 20px 0;
+    width: 100%;
+    height: 370px;
+}
+.contact-form .input-field{
+   background: rgba(255, 255, 255, 0); 
+   padding: 10px;
+   margin: 10px;
+   outline: none;
+   border: 1px solid rgb(255, 78, 0);    
+   width:100%;        
+}
+.contact-form input[type="submit"]{
+   background: rgb(255, 78, 0);
+   color: rgb(255, 255, 255);
+   padding: 10px;
+   margin: 10px;
+   border: 1px solid rgb(255, 78, 0);    
+   outline: none;  
+   width:100%;        
+}
+.contact a{
+    text-decoration: none; color: rgb(0, 0, 0);
+    transition: color 1s;
+}
+.contact a:hover{
+    color: rgb(255, 78, 0);
+}
+.footer{
+   width: 100%;
+   margin: 0;    
+}
+.footer-top{
+    padding: 10px;
+    background: rgb(240, 240, 240);
+}
+.footer-top a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.footer-top li, .ft-title{
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+}
+.footer-bottom{ 
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    /*border-top: 1px solid rgba(255, 78, 0, 0.62);*/ 
+}
+.footer-bottom .subscribe{
+    padding: 10px;
+    margin: 0;
+    color: rgb(245, 245, 245);
+}
+.footer-bottom .subscribe input, .footer-bottom .subscribe button{
+    height: 45px;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid rgb(255, 78, 0);
+}
+.footer-bottom .subscribe input{
+    width: 300px;
+    background: transparent;
+    color: rgb(0, 0, 0);
+}
+.footer-bottom .subscribe button{
+    width: 50px;
+    background: rgb(255, 78, 0);
+    color: rgb(245, 245, 245);
+}
+.footer-bottom .copy, .footer-bottom .social{
+    padding: 10px;
+    display: block;
+} 
+.footer-bottom .social a{
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    transition: color 1s ease-in; 
+}
+.footer-bottom .social a:hover{
+    color: rgb(255, 78, 0);
+}
+@media (max-width: 600px){
+    body{
+        overflow-x: hidden;
+    }
+    .navbar .container{
+        margin: 0;	
+    } 
+    .header-bunner .caption{
+        text-align: center;
+	    margin: 0;
+    }
+    .services .s-block, .projects .p-block{
+        width: 100%;
+    }
+    .contact-form .input-field{ 
+        overflow-x: hidden;
+        width: 100%;
+    }
+    .footer-top li, .ft-title{
+		text-align: center;
+	}
+	.footer-bottom .subscribe input{
+        width: 89%;
+    }
+    .footer-bottom .subscribe button{
+        width: 11%;
+    }
+
+}
+@media (min-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    .header-bunner .caption{
+        text-align: center;
+	    margin: 0;
+    }
+    .services .s-block, .projects .p-block{
+        width: 350px;
+    }
+    .footer-top li, .ft-title{
+        text-align: center;
+	}
+
+}
+@media (min-width: 1024px){
+    .services .s-block, .projects .p-block{
+        width: 236px;
+    }
+    .footer-top li, .ft-title{
+		text-align: left;
+	}
+
+}
+@media (min-width: 1200px){
+    .services .s-block, .projects .p-block{
+        width: 280px;
+    }
+    .footer-top li, .ft-title{
+		text-align: left;
+	}
+
+}
