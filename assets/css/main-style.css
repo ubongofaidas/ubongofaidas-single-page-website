@@ -1,5 +1,6 @@
 body{
     font-family: Lato, sans-serif;
+	
     font-size: 16px;
     margin: 0;
 }
@@ -21,6 +22,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0;	
 }
 .header-bunner .caption{
     padding: 20rem 0 20rem 0;
