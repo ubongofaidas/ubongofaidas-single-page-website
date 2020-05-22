@@ -42,5 +42,6 @@ $(".navbar-nav a").click(function () {
    $("html, body").animate({
        scrollTop: $('#' + navlink).offset().top
    }, 2000);
+   $('.collapse').collapse('hide'); 
 });
 });
